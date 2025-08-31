@@ -10,7 +10,7 @@ A complete retro arcade website featuring 15 classic games recreated through AI 
 
 ## 🎮 Live Demo
 
-**[Play Now →](https://your-username.github.io/aiarcade)** *(Update with your GitHub Pages URL)*
+**[Play Now →](https://galaxyzonearcade.com/)**
 
 ## 🌟 Features
 
@@ -68,8 +68,8 @@ Each game authentically recreates classic arcade mechanics:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/aiarcade.git
-cd aiarcade
+git clone https://github.com/oceanm42/galaxy-zone-arcade.git
+cd galaxy-zone-arcade
 
 # Serve locally (Python 3)
 python -m http.server 8000
@@ -84,7 +84,7 @@ python -m http.server 8000
 2. Go to Settings → Pages
 3. Set source to "Deploy from a branch"
 4. Select "main" branch and "/" (root)
-5. Your arcade will be live at `https://your-username.github.io/aiarcade`
+5. Your arcade will be live at `https://github.com/oceanm42/galaxy-zone-arcade.git`
 
 ## 🏗️ Project Structure
 
