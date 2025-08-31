@@ -1,0 +1,33 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark background -->
+  <rect width="32" height="32" fill="#0a0a0a"/>
+  
+  <!-- Arcade machine outline -->
+  <rect x="6" y="4" width="20" height="24" rx="2" fill="none" stroke="#00FFFF" stroke-width="1.5" filter="url(#glow)"/>
+  
+  <!-- Screen -->
+  <rect x="9" y="7" width="14" height="10" rx="1" fill="#1a1a1a" stroke="#FF00FF" stroke-width="1" filter="url(#glow)"/>
+  
+  <!-- Screen content - simple pixel -->
+  <circle cx="16" cy="12" r="2" fill="#FFFF00" filter="url(#glow)"/>
+  
+  <!-- Control panel -->
+  <rect x="8" y="19" width="16" height="6" rx="1" fill="#1a1a1a" stroke="#00FF00" stroke-width="1" filter="url(#glow)"/>
+  
+  <!-- Buttons -->
+  <circle cx="12" cy="22" r="1.5" fill="none" stroke="#FF00FF" stroke-width="1" filter="url(#glow)"/>
+  <circle cx="20" cy="22" r="1.5" fill="none" stroke="#FF00FF" stroke-width="1" filter="url(#glow)"/>
+  
+  <!-- Joystick -->
+  <circle cx="16" cy="22" r="1" fill="#00FFFF" filter="url(#glow)"/>
+</svg>
