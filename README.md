@@ -84,7 +84,7 @@ python -m http.server 8000
 2. Go to Settings → Pages
 3. Set source to "Deploy from a branch"
 4. Select "main" branch and "/" (root)
-5. Your arcade will be live at `https://github.com/oceanm42/galaxy-zone-arcade.git`
+5. Your arcade will be live at `https://your-username.github.io/galaxy-zone-arcade`
 
 ## 🏗️ Project Structure
 
