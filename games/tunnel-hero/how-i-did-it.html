@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Tunnel Hero - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Tunnel Hero</h1>
+            <p class="story-subtitle">Sal's Underground Racing Championship</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Tunnel Runner (1982)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Tunnel Runner was claustrophobia in gaming form. Racing through an endless underground maze, always one wrong turn away from a dead end, always one collision away from starting over. It was about navigation under pressure."</em></p>
+                    
+                    <p>Sal remembers tunnel racing games as tests of spatial memory and quick reflexes. Players had to memorize branching paths while maintaining breakneck speed through increasingly complex underground passages.</p>
+                    
+                    <p><em>"Kids would develop mental maps of the tunnels, learning every twist and turn. The great players could navigate at full speed through sections that would leave newcomers lost and frustrated."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Creating the perfect tunnel racing experience meant balancing speed with navigation challenges:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>3D Perspective</strong> - First-person tunnel navigation</li>
+                        <li><strong>Branching Paths</strong> - Multiple routes through complex mazes</li>
+                        <li><strong>Speed Management</strong> - Risk versus control in tight spaces</li>
+                        <li><strong>Collision Consequences</strong> - Hitting walls means starting over</li>
+                        <li><strong>Progressive Difficulty</strong> - Narrower tunnels, more complex layouts</li>
+                        <li><strong>Spatial Memory</strong> - Learning optimal paths through repetition</li>
+                    </ul>
+                    
+                    <p><em>"Tunnel racing was about building confidence through familiarity. The more you played, the more the maze became your domain instead of your prison."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Flat Track Racing</h2>
+                <div class="story-text">
+                    <p>The first version of Tunnel Hero was just a basic top-down racer with none of the claustrophobic intensity that made tunnel games special.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Perspective Problems:</h4>
+                        <ul>
+                            <li>Top-down view removed immersive tunnel feeling</li>
+                            <li>Wide open tracks instead of confining tunnels</li>
+                            <li>No spatial navigation challenges or maze elements</li>
+                            <li>Linear paths instead of branching underground networks</li>
+                            <li>Missing the first-person claustrophobic experience</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I looked at this flat racing game and said, 'Where are the tunnels?' This was just driving around tracks. Tunnel Runner was about being underground, enclosed, with limited visibility and tight spaces."</em></p>
+                    
+                    <p>Sal's direction was clear: <strong>"Make it first-person, add real tunnels with walls and ceilings, and create that claustrophobic underground racing experience."</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: True Underground Racing</h2>
+                <div class="story-text">
+                    <p>The breakthrough came when the AI implemented genuine 3D tunnel rendering with proper first-person perspective and collision detection.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>The Tunnel System:</h4>
+                        <ul class="tech-list">
+                            <li><strong>First-Person 3D</strong> - Immersive cockpit perspective</li>
+                            <li><strong>Procedural Tunnels</strong> - Generated maze-like passages</li>
+                            <li><strong>Wall Collision</strong> - Realistic crash physics and penalties</li>
+                            <li><strong>Limited Visibility</strong> - Can only see ahead, not around corners</li>
+                            <li><strong>Speed Scaling</strong> - Faster movement increases difficulty</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"When I first raced through that 3D tunnel, feeling the walls closing in around me and having to navigate blind corners at speed, I knew we had captured the underground racing magic."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Tunnel Hero works because it creates that unique combination of speed and confinement. You want to go fast, but the walls are always there to punish overconfidence. That tension defines great tunnel racing."</em></p>
+                    
+                    <div class="play-link">
+                        <a href="index.html" class="play-button">Play Tunnel Hero Now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"In the darkness of the tunnels, speed becomes both salvation and doom."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

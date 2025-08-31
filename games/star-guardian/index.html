@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Guardian - AI Arcade</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+            color: #00FFFF;
+        }
+        
+        #gameContainer {
+            border: 2px solid #00FFFF;
+            background: #000;
+            position: relative;
+        }
+        
+        #gameCanvas {
+            display: block;
+        }
+        
+        .ui {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 18px;
+            z-index: 10;
+        }
+        
+        .instructions {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 14px;
+            color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="../../index.html" class="nav-back-button" id="backButton">← Back to Arcade</a>
+        <a href="how-i-did-it.html" class="nav-story-link">📖 How I Did It</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="ui">
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 3</div>
+            <div id="level">Level: 1</div>
+        </div>
+        <div class="instructions">
+            Use ARROW keys to move | SPACE for action | Enter to start
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

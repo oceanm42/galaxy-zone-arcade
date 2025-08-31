@@ -1,0 +1,150 @@
+<svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="200" fill="#0a0a0a"/>
+  
+  <!-- Underground tunnel system -->
+  <g>
+    <!-- Main horizontal tunnels -->
+    <rect x="20" y="50" width="210" height="8" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="20" y="90" width="210" height="8" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="20" y="130" width="210" height="8" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="20" y="170" width="210" height="8" fill="none" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Vertical connecting tunnels -->
+    <rect x="60" y="50" width="8" height="40" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="120" y="90" width="8" height="40" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="180" y="50" width="8" height="80" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="90" y="130" width="8" height="40" fill="none" stroke="#654321" stroke-width="2"/>
+    <rect x="150" y="90" width="8" height="80" fill="none" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Tunnel walls with dirt texture -->
+    <g stroke="#8B4513" stroke-width="1" fill="none" opacity="0.6">
+      <line x1="20" y1="45" x2="230" y2="45"/>
+      <line x1="20" y1="63" x2="230" y2="63"/>
+      <line x1="20" y1="85" x2="230" y2="85"/>
+      <line x1="20" y1="103" x2="230" y2="103"/>
+      <line x1="20" y1="125" x2="230" y2="125"/>
+      <line x1="20" y1="143" x2="230" y2="143"/>
+      <line x1="20" y1="165" x2="230" y2="165"/>
+      <line x1="20" y1="183" x2="230" y2="183"/>
+    </g>
+  </g>
+  
+  <!-- Character (underground explorer) -->
+  <g transform="translate(70, 54)">
+    <!-- Body -->
+    <rect x="-4" y="-4" width="8" height="12" fill="#00FFFF" rx="1"/>
+    <!-- Head -->
+    <circle cx="0" cy="-8" r="5" fill="#FFFF00"/>
+    <!-- Helmet/mining light -->
+    <circle cx="0" cy="-8" r="6" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    <circle cx="0" cy="-11" r="2" fill="#FFFF00"/>
+    <!-- Light beam -->
+    <path d="M 0,-11 L 15,-16 L 15,-6 Z" fill="#FFFF00" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Arms -->
+    <circle cx="-6" cy="-2" r="2" fill="#FFFF00"/>
+    <circle cx="6" cy="-2" r="2" fill="#FFFF00"/>
+    <!-- Legs -->
+    <rect x="-5" y="6" width="4" height="6" fill="#00FF00"/>
+    <rect x="1" y="6" width="4" height="6" fill="#00FF00"/>
+    <!-- Pickaxe -->
+    <line x1="6" y1="-2" x2="12" y2="-8" stroke="#8B4513" stroke-width="2"/>
+    <path d="M 12,-8 L 15,-6 L 13,-4 L 10,-6 Z" fill="#C0C0C0"/>
+    
+    <!-- Movement animation -->
+    <animateTransform attributeName="transform" type="translate" values="70,54;120,54;120,94;150,94;150,134;90,134;90,174;70,174;70,54" dur="12s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Enemy creatures in tunnels -->
+  <g transform="translate(200, 94)">
+    <ellipse cx="0" cy="0" rx="6" ry="4" fill="#FF00FF"/>
+    <circle cx="-3" cy="-2" r="1" fill="#FFFF00"/>
+    <circle cx="3" cy="-2" r="1" fill="#FFFF00"/>
+    <!-- Tentacles/legs -->
+    <line x1="-4" y1="2" x2="-8" y2="6" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="4" y1="2" x2="8" y2="6" stroke="#FF00FF" stroke-width="1"/>
+    <animateTransform attributeName="transform" type="translate" values="200,94;180,94;160,94;140,94;120,94;140,94;160,94;180,94;200,94" dur="8s" repeatCount="indefinite"/>
+  </g>
+  
+  <g transform="translate(30, 134)">
+    <ellipse cx="0" cy="0" rx="5" ry="3" fill="#00FF00"/>
+    <circle cx="-2" cy="-1" r="1" fill="#FF00FF"/>
+    <circle cx="2" cy="-1" r="1" fill="#FF00FF"/>
+    <animateTransform attributeName="transform" type="translate" values="30,134;50,134;70,134;90,134;110,134;130,134;150,134;130,134;110,134;90,134;70,134;50,134;30,134" dur="10s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Treasure/gems scattered in tunnels -->
+  <g>
+    <g transform="translate(100, 52)">
+      <path d="M 0,-3 L -2,0 L 0,3 L 2,0 Z" fill="#00FFFF">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <g transform="translate(140, 92)">
+      <path d="M 0,-3 L -2,0 L 0,3 L 2,0 Z" fill="#FFFF00">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <g transform="translate(60, 132)">
+      <path d="M 0,-3 L -2,0 L 0,3 L 2,0 Z" fill="#FF00FF">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <g transform="translate(190, 172)">
+      <path d="M 0,-3 L -2,0 L 0,3 L 2,0 Z" fill="#00FF00">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Gold coins -->
+    <circle cx="45" cy="92" r="3" fill="#FFFF00" stroke="#FF8C00" stroke-width="1">
+      <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="54" r="3" fill="#FFFF00" stroke="#FF8C00" stroke-width="1">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Falling rocks/debris -->
+  <g>
+    <rect x="110" y="25" width="3" height="3" fill="#8B4513">
+      <animate attributeName="y" values="25;65" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="160" y="35" width="2" height="2" fill="#8B4513">
+      <animate attributeName="y" values="35;75" dur="1.8s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Ladder to surface -->
+  <g stroke="#8B4513" stroke-width="2" fill="none">
+    <line x1="30" y1="0" x2="30" y2="50"/>
+    <line x1="26" y1="10" x2="34" y2="10"/>
+    <line x1="26" y1="20" x2="34" y2="20"/>
+    <line x1="26" y1="30" x2="34" y2="30"/>
+    <line x1="26" y1="40" x2="34" y2="40"/>
+  </g>
+  
+  <!-- Surface ground -->
+  <rect x="0" y="0" width="250" height="15" fill="#228B22"/>
+  <g fill="#32CD32">
+    <rect x="10" y="12" width="2" height="3"/>
+    <rect x="25" y="11" width="2" height="4"/>
+    <rect x="40" y="13" width="1" height="2"/>
+    <rect x="60" y="12" width="2" height="3"/>
+    <rect x="80" y="11" width="1" height="4"/>
+  </g>
+  
+  <!-- Score display -->
+  <text x="20" y="25" font-family="monospace" font-size="8" fill="#00FFFF">SCORE: 2150</text>
+  <text x="20" y="38" font-family="monospace" font-size="8" fill="#FFFF00">GEMS: 3</text>
+  
+  <!-- Exit arrow -->
+  <g transform="translate(210, 8)" fill="#FFFF00">
+    <path d="M 0,0 L -5,-3 L -3,-3 L -3,-8 L 3,-8 L 3,-3 L 5,-3 Z"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </g>
+</svg>

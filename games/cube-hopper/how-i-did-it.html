@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Cube Hopper - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Cube Hopper</h1>
+            <p class="story-subtitle">Sal's Quest for the Perfect Q*bert Clone</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Q*bert (1982)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Q*bert was the weird kid in the arcade family – and I loved him for it. While everyone else was shooting aliens or eating dots, Q*bert had players hopping around a pyramid, swearing at a snake, and somehow making it all make sense."</em></p>
+                    
+                    <p>Sal recalls Q*bert as one of the most unique games in his arcade. The isometric 3D view, the diagonal movement, the way players would lean and twist trying to navigate the pyramid – it was unlike anything else.</p>
+                    
+                    <p><em>"Kids would spend hours figuring out the optimal hopping patterns. And that sound when Q*bert gets caught? Pure frustration in audio form. But they'd keep coming back, determined to master that crazy pyramid."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Q*bert wasn't just about the gameplay – it was about capturing that unique 3D-in-2D magic:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Isometric Pyramid</strong> - 7 rows of cubes in perfect perspective</li>
+                        <li><strong>Diagonal Movement</strong> - Arrow keys map to diagonal hops, not straight lines</li>
+                        <li><strong>Cube Color Logic</strong> - Step on gray cubes to turn them cyan, then yellow</li>
+                        <li><strong>Hopping Animation</strong> - Real arcing jumps with physics</li>
+                        <li><strong>Enemy Personalities</strong> - Different colored enemies with unique behaviors</li>
+                        <li><strong>Fall-off Danger</strong> - Miss a hop, lose a life</li>
+                    </ul>
+                    
+                    <p><em>"The pyramid had to look exactly right – like you could reach into the screen and grab those cubes. That's the Q*bert magic."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Disaster: "It Does Nothing"</h2>
+                <div class="story-text">
+                    <p>The first version of Cube Hopper was an embarrassment. Instead of Q*bert's isometric masterpiece, Sal got a flat square moving around a flat screen.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>What Went Wrong:</h4>
+                        <ul>
+                            <li>No pyramid – just a flat 2D grid</li>
+                            <li>Regular movement instead of diagonal hopping</li>
+                            <li>No cube color-changing mechanics</li>
+                            <li>No enemies or meaningful gameplay</li>
+                            <li>Basically just a moving rectangle</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I stared at this thing for about ten seconds and said, 'Are you kidding me?' It looked like someone's first programming exercise, not Q*bert. Time for some tough love."</em></p>
+                    
+                    <p>This led to Sal's most frustrated prompt: <strong>"redo cube hopper. It does nothing right now. Think hard and make it work"</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Breakthrough: Real Q*bert Magic</h2>
+                <div class="story-text">
+                    <p>The second attempt was a complete ground-up rebuild. The AI finally understood what made Q*bert special.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>The Real Implementation:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Isometric Cube Rendering</strong> - Top, left, and right faces with proper shading</li>
+                            <li><strong>Pyramid Coordinate System</strong> - Row/column logic that expands each level</li>
+                            <li><strong>Diagonal Movement Mapping</strong> - Arrow keys control pyramid navigation</li>
+                            <li><strong>Hopping Physics</strong> - Smooth arc animation between cubes</li>
+                            <li><strong>Color State Management</strong> - Track each cube's transformation progress</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"When I saw those cubes render with proper 3D shading and watched Q*bert hop in a perfect arc from one to the next, I knew we had it. That's the moment a flat game becomes a world."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Getting Q*bert right was all about the small touches that made the original memorable:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Hopping Arc</h4>
+                        <p><em>"Q*bert doesn't just teleport between cubes – he hops with a beautiful arc. We used sine wave math to create that perfect bounce. When you see him floating through the air, you feel the physics."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Cube Face Rendering</h4>
+                        <p><em>"Each cube has three visible faces – top, left side, and right side. We render them with different brightness levels so they look properly 3D. It's like building tiny architectures on the screen."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Fall-Off Consequences</h4>
+                        <p><em>"Miss your hop and you fall off the pyramid – instant life lost. That danger makes every move meaningful. You can't just mash buttons in Q*bert; you have to think three hops ahead."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakthrough</h2>
+                <div class="story-text">
+                    <p>Here's how Cube Hopper creates that isometric Q*bert magic:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Pyramid Coordinate System</h4>
+                    <code class="code-block">
+// Generate pyramid structure
+for (let row = 0; row < this.ROWS; row++) {
+    this.pyramid[row] = [];
+    for (let col = 0; col <= row; col++) {
+        // Each row has one more cube than the last
+        // Row 0: 1 cube, Row 1: 2 cubes, etc.
+    }
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Isometric Cube Drawing</h4>
+                    <code class="code-block">
+// Draw three faces of each cube for 3D effect
+drawCube(x, y, color) {
+    // Top face (brightest)
+    this.ctx.fillStyle = cubeColor;
+    
+    // Left face (medium brightness)  
+    this.ctx.fillStyle = darkerLeft;
+    
+    // Right face (darkest)
+    this.ctx.fillStyle = darkerRight;
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Diagonal Movement Logic</h4>
+                    <code class="code-block">
+// Arrow keys map to pyramid directions
+switch (keyCode) {
+    case 'ArrowUp':    // Up-left on pyramid
+        newRow--; break;
+    case 'ArrowRight': // Up-right on pyramid  
+        newRow--; newCol++; break;
+    case 'ArrowDown':  // Down-right on pyramid
+        newRow++; newCol++; break;
+    case 'ArrowLeft':  // Down-left on pyramid
+        newRow++; break;
+}
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"The difference between version one and version two of Cube Hopper was the difference between a sketch and a painting. Version one was embarrassing. Version two made me proud."</em></p>
+                    
+                    <p><em>"When you hop onto a gray cube and watch it transform to cyan, when you see that perfect isometric perspective, when you feel the weight of Q*bert's hop – that's when you know you've captured something special."</em></p>
+                    
+                    <p><em>"Sometimes you have to be willing to throw everything out and start over. The best games aren't built – they're rebuilt until they're perfect."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Cube Hopper Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"Every hop, every color change, every narrow escape – that's Q*bert magic in every pixel."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

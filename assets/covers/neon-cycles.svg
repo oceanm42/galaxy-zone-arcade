@@ -1,0 +1,96 @@
+<svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="200" fill="#0a0a0a"/>
+  
+  <!-- Grid background with pulse -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#003366" stroke-width="1">
+        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- Light cycle 1 (cyan) -->
+  <g>
+    <rect x="74" y="77" width="12" height="6" fill="#00FFFF" rx="1">
+      <animate attributeName="fill" values="#00FFFF;#44FFFF;#00FFFF" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="76" cy="80" r="2" fill="#00FFFF">
+      <animate attributeName="fill" values="#00FFFF;#44FFFF;#00FFFF" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="84" cy="80" r="2" fill="#00FFFF">
+      <animate attributeName="fill" values="#00FFFF;#44FFFF;#00FFFF" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="78" y="74" width="4" height="6" fill="#FFFFFF"/>
+    <circle cx="80" cy="72" r="2" fill="#FFFFFF"/>
+    
+    <!-- Trail with animated opacity -->
+    <path d="M 20,80 L 80,80" stroke="#00FFFF" stroke-width="4" fill="none">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Light cycle 2 (magenta) -->
+  <g>
+    <rect x="137" y="117" width="6" height="12" fill="#FF00FF" rx="1">
+      <animate attributeName="fill" values="#FF00FF;#FF44FF;#FF00FF" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="140" cy="116" r="2" fill="#FF00FF">
+      <animate attributeName="fill" values="#FF00FF;#FF44FF;#FF00FF" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="124" r="2" fill="#FF00FF">
+      <animate attributeName="fill" values="#FF00FF;#FF44FF;#FF00FF" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="134" y="118" width="6" height="4" fill="#FFFFFF"/>
+    <circle cx="132" cy="120" r="2" fill="#FFFFFF"/>
+    
+    <!-- Trail with animated opacity -->
+    <path d="M 140,60 L 140,120" stroke="#FF00FF" stroke-width="4" fill="none">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Light cycle 3 (yellow) -->
+  <g>
+    <rect x="177" y="34" width="6" height="12" fill="#FFFF00" rx="1">
+      <animate attributeName="fill" values="#FFFF00;#FFFF44;#FFFF00" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="180" cy="36" r="2" fill="#FFFF00">
+      <animate attributeName="fill" values="#FFFF00;#FFFF44;#FFFF00" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="44" r="2" fill="#FFFF00">
+      <animate attributeName="fill" values="#FFFF00;#FFFF44;#FFFF00" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="174" y="38" width="6" height="4" fill="#FFFFFF"/>
+    <circle cx="172" cy="40" r="2" fill="#FFFFFF"/>
+    
+    <!-- Trail with animated opacity -->
+    <path d="M 180,40 L 230,40" stroke="#FFFF00" stroke-width="4" fill="none">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Complex trail patterns with animation -->
+  <path d="M 30,100 L 60,100 L 60,80 L 120,80 L 120,60 L 160,60" stroke="#00FFFF" stroke-width="3" fill="none">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 160,80 L 140,80 L 140,140 L 100,140" stroke="#FF00FF" stroke-width="3" fill="none">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 200,60 L 180,60 L 180,80 L 120,80" stroke="#FFFF00" stroke-width="3" fill="none">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.2s" begin="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Arena boundaries -->
+  <rect x="15" y="15" width="220" height="170" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Title with glow effect -->
+  <text x="125" y="30" font-family="monospace" font-size="14" fill="#00FFFF" text-anchor="middle">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    NEON CYCLES
+  </text>
+  <text x="125" y="190" font-family="monospace" font-size="10" fill="#FFFFFF" text-anchor="middle" opacity="0.7">
+    Tron Light Cycle Battle
+  </text>
+</svg>

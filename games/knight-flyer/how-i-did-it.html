@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Knight Flyer - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Knight Flyer</h1>
+            <p class="story-subtitle">Sal's Journey to Master Medieval Aerial Combat</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Joust (1982)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Joust was different from every other arcade game I'd ever seen. Knights riding flying ostriches, battling it out in mid-air – it was absolutely ridiculous and completely brilliant. The first time someone explained the concept to me, I thought they were pulling my leg."</em></p>
+                    
+                    <p>Sal recalls Joust as one of the most unique games in his arcade. Players would furiously tap the flap button, trying to gain altitude advantage over their opponents, turning medieval combat into an aerial physics puzzle.</p>
+                    
+                    <p><em>"The genius was in the momentum. You couldn't just hover – you had to constantly flap, constantly think about momentum and positioning. And that moment when you'd knock an enemy rider off their mount? Pure satisfaction."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Joust's unique aerial combat meant capturing its distinctive physics and strategic elements:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Momentum-Based Flight</strong> - Tap to flap, gravity always pulling down</li>
+                        <li><strong>Height Advantage Combat</strong> - Higher rider wins the collision</li>
+                        <li><strong>Platform Navigation</strong> - Use floating platforms strategically</li>
+                        <li><strong>Egg Collection Mechanics</strong> - Defeated enemies drop collectible eggs</li>
+                        <li><strong>Increasing Difficulty</strong> - More enemies with better AI each wave</li>
+                        <li><strong>Medieval Aesthetic</strong> - Knights, lances, and fantasy elements</li>
+                    </ul>
+                    
+                    <p><em>"Joust wasn't just about flying – it was about controlling momentum while thinking three moves ahead. Every flap had to count, every platform could be the difference between victory and defeat."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Boring Button Masher</h2>
+                <div class="story-text">
+                    <p>The first version of Knight Flyer completely missed Joust's strategic depth. Instead of tactical aerial combat, Sal got a mindless flapping simulator.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Problems:</h4>
+                        <ul>
+                            <li>Flight felt floaty and disconnected</li>
+                            <li>No height-advantage combat mechanics</li>
+                            <li>Enemies were too easy and predictable</li>
+                            <li>No strategic use of platforms</li>
+                            <li>Missing the satisfying "jousting" collisions</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I played it for two minutes and thought, 'This isn't Joust, this is some kind of flight training program.' Where was the combat? Where was the strategy? You could just hover in one spot and win."</em></p>
+                    
+                    <p>Sal's direct feedback: <strong>"This needs the momentum physics and height-advantage combat that made Joust legendary"</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Breakthrough: Physics-Based Combat</h2>
+                <div class="story-text">
+                    <p>The solution came when the AI implemented proper momentum physics and collision-based combat rules that rewarded skilled positioning.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>Key Gameplay Mechanics:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Gravity System</strong> - Constant downward pull requires active flapping</li>
+                            <li><strong>Height Comparison</strong> - Higher rider wins collisions and eliminates enemies</li>
+                            <li><strong>Momentum Conservation</strong> - Each flap adds upward velocity with physics</li>
+                            <li><strong>Platform Interaction</strong> - Solid landing spots for strategic positioning</li>
+                            <li><strong>Enemy AI</strong> - Opponents actively seek height advantage</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"When I saw the knight actually bounce off platforms and gain height advantage to eliminate enemies, I knew we had captured the Joust magic. Suddenly every flap mattered again."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Knight Flyer succeeds because it captures Joust's unique tactical elements:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Momentum Challenge</h4>
+                        <p><em>"Every time you tap that flap button, you're making a commitment. Too little and you fall, too much and you overshoot your target. Finding that perfect rhythm is what separates good Joust players from great ones."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Height Advantage Drama</h4>
+                        <p><em>"The moment when you and an enemy are both climbing for the same altitude, both desperately flapping, and you edge out just a pixel higher – that's pure Joust tension right there."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Platform Strategy</h4>
+                        <p><em>"Those floating platforms aren't just obstacles – they're tactical advantages. Landing on one gives you a moment to plan your next move and a solid base to launch from. Master players use them like chess pieces."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakthrough</h2>
+                <div class="story-text">
+                    <p>Here's how Knight Flyer creates authentic Joust mechanics:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Momentum-Based Flight</h4>
+                    <code class="code-block">
+// Gravity constantly pulls the player down
+this.player.velocityY += this.gravity;
+
+// Flapping adds upward velocity
+if (this.keys.flap && !this.lastFlap) {
+    this.player.velocityY = -this.flapPower;
+    this.playSound(440, 0.1); // Wing flap sound
+}
+
+// Update position based on physics
+this.player.y += this.player.velocityY;
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Height-Advantage Combat</h4>
+                    <code class="code-block">
+// Check collisions between player and enemies
+for (let enemy of this.enemies) {
+    if (this.checkCollision(this.player, enemy)) {
+        if (this.player.y < enemy.y) {
+            // Player is higher - defeats enemy
+            this.eliminateEnemy(enemy);
+            this.score += 100;
+        } else {
+            // Enemy is higher - player loses life
+            this.loseLife();
+        }
+    }
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Strategic AI Behavior</h4>
+                    <code class="code-block">
+// Enemies actively seek height advantage
+updateEnemyAI(enemy) {
+    // Try to get above the player
+    if (enemy.y > this.player.y - 50) {
+        enemy.flapping = true;
+        enemy.velocityY = -this.flapPower * 0.8;
+    }
+    
+    // Move toward player horizontally
+    const direction = this.player.x > enemy.x ? 1 : -1;
+    enemy.x += direction * enemy.speed;
+}
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Knight Flyer gets Joust right because every movement has consequences. You can't just button mash your way to victory – you need to think about momentum, positioning, and timing with every single flap."</em></p>
+                    
+                    <p><em>"When I watch someone playing Knight Flyer and they start using the platforms strategically, timing their flaps to gain height advantage, I know they've discovered what made Joust special. It's chess in the sky."</em></p>
+                    
+                    <p><em>"The best arcade games aren't just about reflexes – they're about understanding systems. Joust taught players physics through fun, and Knight Flyer brings that lesson back to life."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Knight Flyer Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"In aerial combat, altitude is everything – but earning it takes skill, timing, and courage."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

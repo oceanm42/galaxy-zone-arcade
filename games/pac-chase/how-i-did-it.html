@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Pac-Chase - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Pac-Chase</h1>
+            <p class="story-subtitle">Sal's Journey Recreating the King of Arcade Games</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Pac-Man (1980)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"I'll never forget the day Pac-Man arrived at Galaxy Zone in 1980. The delivery truck pulled up, and I knew we had something special. Within hours, there was a line of kids wrapped around the block."</em></p>
+                    
+                    <p>Sal remembers the Pac-Man fever like it was yesterday. The distinctive <em>wakka-wakka</em> sound, the ghost chase music, the way kids would crowd around the cabinet, shouting directions at whoever was playing. It wasn't just a game – it was a phenomenon.</p>
+                    
+                    <p><em>"Every arcade owner knew Pac-Man was the king. If you could master the patterns, you could play for hours on a single quarter. I watched kids become legends on that machine."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>When Sal decided to recreate Pac-Man for his AI Arcade, he had crystal-clear memories of what made the original magical:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>The Maze</strong> - That iconic blue maze layout, burned into every arcade kid's memory</li>
+                        <li><strong>Ghost Personalities</strong> - Each ghost had to feel different, with unique AI patterns</li>
+                        <li><strong>Power Pellet Drama</strong> - The moment when the hunter becomes the hunted</li>
+                        <li><strong>Perfect Timing</strong> - Grid-based movement that felt smooth but precise</li>
+                        <li><strong>Sound Design</strong> - Those authentic arcade beeps and boops</li>
+                    </ul>
+                    
+                    <p><em>"I wanted kids today to feel that same rush I saw in 1980 – that moment when you clear a screen and the ghosts speed up for the next level."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Floating-Point Disaster</h2>
+                <div class="story-text">
+                    <p>The first version of Pac-Chase was a nightmare. The AI had created a sophisticated floating-point movement system that looked impressive in code but played terribly.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Problems:</h4>
+                        <ul>
+                            <li>Pac-Man would get stuck between maze walls</li>
+                            <li>Ghosts would vibrate and glitch through corridors</li>
+                            <li>Collision detection was unpredictable</li>
+                            <li>The game felt sluggish and unresponsive</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I played the first version for exactly thirty seconds before shutting it down. 'This ain't Pac-Man,' I told my AI buddy. 'This is some kind of geometric nightmare.'"</em></p>
+                    
+                    <p>Sal's frustration led to one of his most direct prompts: <strong>"pac chase does nothing. redo this game correctly. think"</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: Back to Basics</h2>
+                <div class="story-text">
+                    <p>The breakthrough came when Sal demanded a complete rebuild using the fundamentals he remembered from the original arcade hardware.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>Key Technical Decisions:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Grid-Based Movement</strong> - 31x23 tile grid, just like the original</li>
+                            <li><strong>Integer Coordinates</strong> - No floating-point bugs, pure grid logic</li>
+                            <li><strong>Timing Control</strong> - Player moves every 8 frames, ghosts every 10</li>
+                            <li><strong>Hand-Crafted Maze</strong> - Traditional Pac-Man layout in string format</li>
+                            <li><strong>Simple AI Patterns</strong> - Chase with 80% targeting, 20% randomness</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"Sometimes the old ways are the only ways that work. Those 1980 arcade programmers knew what they were doing – tight constraints, simple math, perfect timing."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Capturing the Feel</h2>
+                <div class="story-text">
+                    <p>The real magic wasn't in the code – it was in the details that made Pac-Man feel alive:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Mouth Animation</h4>
+                        <p><em>"That chomping mouth had to be perfect. I watched the AI code it frame by frame – open, closed, open, closed. When Pac-Man stops moving, his mouth closes. That's the kind of detail that separates good games from legendary ones."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Ghost Behavior</h4>
+                        <p><em>"Each ghost needed personality. Red is aggressive, pink tries to ambush, cyan is unpredictable. Even with simple AI, you can feel the difference when they're chasing you."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Power Pellet Magic</h4>
+                        <p><em>"The moment you eat a power pellet and the ghosts turn blue – that's pure arcade gold. Suddenly you're the predator, and those same ghosts that were terrorizing you are running for their lives."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakdown</h2>
+                <div class="story-text">
+                    <p>Here's how Pac-Chase actually works under the hood:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Maze Layout System</h4>
+                    <code class="code-block">
+// Classic Pac-Man maze stored as strings
+this.mazeLayout = [
+    "1111111111111111111111111111111",
+    "1222222222222211122222222222221",
+    "1311112111112211112111112111131",
+    // ... 31 columns x 23 rows
+];
+// 1=wall, 2=dot, 3=power pellet, 0=empty
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Grid Movement Logic</h4>
+                    <code class="code-block">
+// Player moves every 8 frames for controlled speed
+if (this.gameTimer % 8 === 0) {
+    this.updatePlayer();
+}
+
+// Simple but effective collision detection
+canMove(x, y) {
+    return this.maze[y][x] !== 1; // Not a wall
+}
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"The second version of Pac-Chase felt right from the first move. Smooth, responsive, just like I remembered. The AI nailed it by going back to the fundamentals instead of overcomplicating things."</em></p>
+                    
+                    <p><em>"When I see someone play Pac-Chase and instinctively try to cut corners or lead ghosts into a trap, I know we got it right. The muscle memory from 1980 still works in 2025."</em></p>
+                    
+                    <p><em>"Sometimes the best technology is the simplest technology. Pac-Man proved that 45 years ago, and it's still true today."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Pac-Chase Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"Every dot collected, every ghost dodged, every power pellet earned – that's the real arcade magic."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

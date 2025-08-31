@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Asteroid Blaster - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Asteroid Blaster</h1>
+            <p class="story-subtitle">Sal's Journey to Master the Physics of Space</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Asteroids (1979)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Asteroids was pure physics poetry. No other arcade game taught you Newton's laws quite like piloting that little triangle through an asteroid field. Every thrust, every rotation, every momentum-based collision was a lesson in space dynamics."</em></p>
+                    
+                    <p>Sal recalls Asteroids as the thinking person's space game. Players had to master not just shooting, but momentum, inertia, and the art of controlled flight in a frictionless environment.</p>
+                    
+                    <p><em>"I'd watch kids play and you could see the exact moment when they 'got' the physics. Suddenly they'd stop fighting the ship and start dancing with it, using momentum like a tool instead of wrestling against it."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Asteroids meant capturing the elegant physics that made space flight feel real:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Newtonian Physics</strong> - Objects in motion stay in motion</li>
+                        <li><strong>Momentum-Based Flight</strong> - Thrust doesn't move you, it accelerates you</li>
+                        <li><strong>Screen Wrapping</strong> - The classic asteroid field is infinite</li>
+                        <li><strong>Fragment Dynamics</strong> - Large asteroids split into smaller ones</li>
+                        <li><strong>Rotational Control</strong> - Separate steering from movement</li>
+                        <li><strong>Collision Physics</strong> - Mass and velocity determine destruction</li>
+                    </ul>
+                    
+                    <p><em>"Asteroids wasn't about quick reflexes – it was about thinking three moves ahead. You had to plan your trajectory, manage your momentum, and always know where your ship was heading next."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Fake Physics</h2>
+                <div class="story-text">
+                    <p>The first version of Asteroid Blaster felt like driving a car instead of piloting a spacecraft. The physics were completely wrong.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Physics Failures:</h4>
+                        <ul>
+                            <li>Ship stopped immediately when thrust key was released</li>
+                            <li>No momentum conservation or inertia effects</li>
+                            <li>Direct movement controls instead of thrust-based acceleration</li>
+                            <li>Asteroids moved in straight lines with no rotation</li>
+                            <li>Collisions had no realistic impact on movement</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I took one look at this thing and said, 'This isn't space – this is underwater driving.' The ship was moving like it had brakes and friction. That's not how Asteroids worked."</em></p>
+                    
+                    <p>Sal's feedback cut right to the core: <strong>"The physics are wrong. Make it feel like you're really floating in space with real momentum."</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: True Space Physics</h2>
+                <div class="story-text">
+                    <p>The breakthrough came when the AI implemented genuine Newtonian mechanics – every force has an equal and opposite reaction.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>Real Physics Implementation:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Velocity Accumulation</strong> - Thrust adds to existing momentum</li>
+                            <li><strong>Friction Simulation</strong> - Minimal drag to prevent infinite acceleration</li>
+                            <li><strong>Angular Momentum</strong> - Ship rotation affects thrust direction</li>
+                            <li><strong>Screen Wrapping</strong> - Seamless transition between edges</li>
+                            <li><strong>Fragment Physics</strong> - Asteroids inherit parent momentum when split</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"Once we got the physics right, everything fell into place. Players had to learn to fly all over again, just like in the original. That learning curve is what made Asteroids special."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Asteroid Blaster succeeds because it captures the pure joy of mastering space flight:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Momentum Dance</h4>
+                        <p><em>"When you master the physics, flying becomes a dance. You learn to tap thrust in tiny bursts, use rotation to change direction without changing speed, and ride your momentum like a surfboard."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Asteroid Fragmentation</h4>
+                        <p><em>"Shooting a big asteroid and watching it explode into smaller pieces – each with its own trajectory based on the physics of the impact – that's pure arcade satisfaction. Every break feels realistic."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Screen Edge Strategy</h4>
+                        <p><em>"The screen wrapping isn't just a gimmick – it's a strategic element. You can escape danger by flying off one edge and appearing on the other, but you better know exactly where you're going to end up."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakthrough</h2>
+                <div class="story-text">
+                    <p>Here's how Asteroid Blaster achieves authentic space physics:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Momentum-Based Movement</h4>
+                    <code class="code-block">
+// Thrust adds to velocity, doesn't set it
+if (this.keys['ArrowUp']) {
+    this.ship.vx += Math.cos(this.ship.angle) * this.thrustPower;
+    this.ship.vy += Math.sin(this.ship.angle) * this.thrustPower;
+}
+
+// Apply friction to prevent infinite acceleration
+this.ship.vx *= this.friction;
+this.ship.vy *= this.friction;
+
+// Position updates based on accumulated velocity
+this.ship.x += this.ship.vx;
+this.ship.y += this.ship.vy;
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Screen Wrapping Physics</h4>
+                    <code class="code-block">
+// Seamless world wrapping maintains momentum
+if (this.ship.x < 0) this.ship.x = this.canvas.width;
+if (this.ship.x > this.canvas.width) this.ship.x = 0;
+if (this.ship.y < 0) this.ship.y = this.canvas.height;
+if (this.ship.y > this.canvas.height) this.ship.y = 0;
+// Velocity remains unchanged through wrapping
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Realistic Fragmentation</h4>
+                    <code class="code-block">
+// Split asteroids inherit parent momentum
+createFragments(asteroid, numFragments) {
+    for (let i = 0; i < numFragments; i++) {
+        const fragment = {
+            x: asteroid.x,
+            y: asteroid.y,
+            vx: asteroid.vx + (Math.random() - 0.5) * 4,
+            vy: asteroid.vy + (Math.random() - 0.5) * 4,
+            // Physics-based inheritance with random variance
+        };
+    }
+}
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Asteroid Blaster gets it right because it respects the physics. Every movement feels earned, every collision feels real, every successful navigation through a dense asteroid field feels like genuine piloting skill."</em></p>
+                    
+                    <p><em>"When I see someone play and they start making those tiny thrust corrections, using rotation to fine-tune their trajectory, I know they've found the Asteroids magic. It's not about shooting – it's about flying."</em></p>
+                    
+                    <p><em>"The best space games make you feel like you're really out there, subject to the same laws of physics as actual spacecraft. That's what makes every close call feel authentic and every successful maneuver feel earned."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Asteroid Blaster Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"In the vacuum of space, momentum is your best friend and worst enemy."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

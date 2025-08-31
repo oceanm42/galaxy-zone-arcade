@@ -1,0 +1,104 @@
+<svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="200" fill="#0a0a0a"/>
+  
+  <!-- Star field -->
+  <circle cx="40" cy="30" r="1" fill="#FFFFFF"/>
+  <circle cx="90" cy="20" r="1" fill="#FFFFFF"/>
+  <circle cx="160" cy="40" r="1" fill="#FFFFFF"/>
+  <circle cx="210" cy="25" r="1" fill="#FFFFFF"/>
+  <circle cx="30" cy="80" r="1" fill="#FFFFFF"/>
+  <circle cx="180" cy="70" r="1" fill="#FFFFFF"/>
+  <circle cx="220" cy="90" r="1" fill="#FFFFFF"/>
+  <circle cx="50" cy="120" r="1" fill="#FFFFFF"/>
+  <circle cx="200" cy="130" r="1" fill="#FFFFFF"/>
+  <circle cx="70" cy="160" r="1" fill="#FFFFFF"/>
+  <circle cx="150" cy="170" r="1" fill="#FFFFFF"/>
+  
+  <!-- Player ship -->
+  <g transform="translate(125, 160)">
+    <path d="M 0,-12 L -8,8 L -4,8 L -3,12 L 3,12 L 4,8 L 8,8 Z" fill="#00FFFF" stroke="#00FFFF" stroke-width="1"/>
+    <path d="M -2,-8 L 2,-8 L 0,-4 Z" fill="#FFFF00"/>
+    <!-- Wing cannons -->
+    <rect x="-6" y="4" width="2" height="4" fill="#FF00FF"/>
+    <rect x="4" y="4" width="2" height="4" fill="#FF00FF"/>
+  </g>
+  
+  <!-- Swooping aliens formation -->
+  <g>
+    <!-- Lead alien -->
+    <g transform="translate(125, 60)">
+      <path d="M 0,-8 L -6,-4 L -8,0 L -6,4 L 0,6 L 6,4 L 8,0 L 6,-4 Z" fill="#FF00FF" stroke="#FF00FF" stroke-width="1"/>
+      <circle cx="-3" cy="-2" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-2" r="1" fill="#FFFF00"/>
+      <animateTransform attributeName="transform" type="translate" values="125,60;100,80;125,100;150,80;125,60" dur="3s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Following aliens in swooping formation -->
+    <g transform="translate(100, 80)">
+      <path d="M 0,-6 L -4,-3 L -5,0 L -4,3 L 0,4 L 4,3 L 5,0 L 4,-3 Z" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+      <circle cx="-2" cy="-1" r="1" fill="#FFFF00"/>
+      <circle cx="2" cy="-1" r="1" fill="#FFFF00"/>
+      <animateTransform attributeName="transform" type="translate" values="100,80;80,95;100,110;120,95;100,80" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(150, 80)">
+      <path d="M 0,-6 L -4,-3 L -5,0 L -4,3 L 0,4 L 4,3 L 5,0 L 4,-3 Z" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+      <circle cx="-2" cy="-1" r="1" fill="#FFFF00"/>
+      <circle cx="2" cy="-1" r="1" fill="#FFFF00"/>
+      <animateTransform attributeName="transform" type="translate" values="150,80;170,95;150,110;130,95;150,80" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Wing aliens -->
+    <g transform="translate(70, 100)">
+      <path d="M 0,-5 L -3,-2 L -4,0 L -3,2 L 0,3 L 3,2 L 4,0 L 3,-2 Z" fill="#FFFF00" stroke="#FFFF00" stroke-width="1"/>
+      <circle cx="-1" cy="0" r="1" fill="#FF00FF"/>
+      <circle cx="1" cy="0" r="1" fill="#FF00FF"/>
+      <animateTransform attributeName="transform" type="translate" values="70,100;60,115;70,130;80,115;70,100" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(180, 100)">
+      <path d="M 0,-5 L -3,-2 L -4,0 L -3,2 L 0,3 L 3,2 L 4,0 L 3,-2 Z" fill="#FFFF00" stroke="#FFFF00" stroke-width="1"/>
+      <circle cx="-1" cy="0" r="1" fill="#FF00FF"/>
+      <circle cx="1" cy="0" r="1" fill="#FF00FF"/>
+      <animateTransform attributeName="transform" type="translate" values="180,100;190,115;180,130;170,115;180,100" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Player laser shots -->
+  <rect x="119" y="140" width="2" height="8" fill="#00FFFF">
+    <animate attributeName="y" values="140;40" dur="0.6s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="129" y="130" width="2" height="8" fill="#00FFFF">
+    <animate attributeName="y" values="130;30" dur="0.6s" begin="0.3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Alien laser shots -->
+  <circle cx="125" cy="90" r="2" fill="#FF00FF">
+    <animate attributeName="cy" values="90;180" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Explosion effects -->
+  <g transform="translate(80, 40)" opacity="0.6">
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#FFFF00" stroke-width="2">
+      <animate attributeName="r" values="0;12;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#FFFF00" opacity="0.8">
+      <animate attributeName="r" values="3;8;3" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Score bonus -->
+  <text x="20" y="30" font-family="monospace" font-size="12" fill="#00FFFF">1000</text>
+  
+  <!-- Formation trail effect -->
+  <g stroke="#FF00FF" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M 125,60 Q 110,70 100,80 Q 90,90 100,100">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 125,60 Q 140,70 150,80 Q 160,90 150,100">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

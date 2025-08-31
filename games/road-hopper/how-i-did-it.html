@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Road Hopper - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Road Hopper</h1>
+            <p class="story-subtitle">Sal's Quest to Recreate the Ultimate Test of Timing</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Frogger (1981)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Frogger was pure anxiety in arcade form. Every kid who played it understood the fundamental challenge – cross the road without getting squished. Simple concept, impossible to master, and absolutely addictive."</em></p>
+                    
+                    <p>Sal remembers Frogger as the game that taught timing and pattern recognition better than any other. Players would stand at the controls, studying traffic patterns, waiting for the perfect moment to make their move.</p>
+                    
+                    <p><em>"I'd watch kids play Frogger and you could see them literally lean left and right, trying to will that little frog through traffic. The tension was incredible – one mistimed hop and you're roadkill."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Frogger meant capturing the precise timing mechanics that made every crossing feel like a life-or-death decision:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Grid-Based Movement</strong> - Discrete hops, not continuous movement</li>
+                        <li><strong>Traffic Patterns</strong> - Predictable but complex vehicle flows</li>
+                        <li><strong>Multi-Lane Challenge</strong> - Each lane moves at different speeds</li>
+                        <li><strong>Water Obstacles</strong> - Floating logs and deadly gaps</li>
+                        <li><strong>Time Pressure</strong> - Race against the clock</li>
+                        <li><strong>Progressive Difficulty</strong> - Faster traffic as levels advance</li>
+                    </ul>
+                    
+                    <p><em>"Frogger was never about quick reflexes – it was about patience, observation, and perfect timing. You had to read the patterns and find the rhythm of the road."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Smooth Movement Chaos</h2>
+                <div class="story-text">
+                    <p>The first version of Road Hopper completely missed Frogger's strategic core by using smooth, continuous movement instead of the classic grid-based hops.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Movement Problems:</h4>
+                        <ul>
+                            <li>Continuous movement instead of discrete grid hops</li>
+                            <li>Imprecise positioning made collision detection unfair</li>
+                            <li>No clear timing windows for safe crossing</li>
+                            <li>Traffic moved too randomly, no learnable patterns</li>
+                            <li>Players couldn't plan moves in advance</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I played this thing for two minutes and said, 'This isn't Frogger – this is bumper cars.' You couldn't time anything because nothing moved with precision. Frogger was all about precision."</em></p>
+                    
+                    <p>Sal's direction was clear: <strong>"Make it grid-based like the original. Every hop should lock into position, and traffic patterns need to be learnable."</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: Perfect Grid Logic</h2>
+                <div class="story-text">
+                    <p>The breakthrough came when the AI implemented true Frogger mechanics – a world divided into precise grid squares where every movement mattered.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>The Grid System:</h4>
+                        <ul class="tech-list">
+                            <li><strong>40-pixel Grid Squares</strong> - Every position is exact and predictable</li>
+                            <li><strong>Discrete Movement</strong> - Player locks into grid positions</li>
+                            <li><strong>Lane-Based Traffic</strong> - Vehicles follow precise horizontal paths</li>
+                            <li><strong>Collision Detection</strong> - Grid-based, fair and predictable</li>
+                            <li><strong>Movement Cooldown</strong> - Prevents accidental double-hops</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"Once we got the grid system working, everything clicked. Players could study the patterns, time their moves, and feel like masters of the road. That's the Frogger magic."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Road Hopper succeeds because it captures Frogger's core tension between safety and progress:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Timing Window</h4>
+                        <p><em>"There's always that perfect moment when the gap in traffic opens up. You wait... wait... NOW! That split-second decision between safety and opportunity is pure Frogger adrenaline."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Lane Psychology</h4>
+                        <p><em>"Each lane has its own personality – slow trucks you can walk alongside, fast cars that demand perfect timing, and those tricky medium-speed lanes that lull you into false confidence."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>The Safety Zone Relief</h4>
+                        <p><em>"Landing in that middle divider after navigating heavy traffic – that moment of safety before facing the next challenge – that's when you realize how tense you were holding your breath."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakthrough</h2>
+                <div class="story-text">
+                    <p>Here's how Road Hopper achieves authentic Frogger precision:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Grid-Based Movement</h4>
+                    <code class="code-block">
+// Movement locks into grid positions
+move(dx, dy) {
+    if (this.player.moving) return; // Prevent double-hops
+    
+    const newX = this.player.x + dx;
+    const newY = this.player.y + dy;
+    
+    // Boundary checking and grid snapping
+    if (newX >= 0 && newX < this.cols && 
+        newY >= 0 && newY < this.rows) {
+        this.player.x = newX;
+        this.player.y = newY;
+        this.player.moving = true; // Lock movement briefly
+    }
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Predictable Traffic Patterns</h4>
+                    <code class="code-block">
+// Each lane moves at consistent speed
+updateVehicles() {
+    for (let vehicle of this.vehicles) {
+        vehicle.x += vehicle.speed; // Constant velocity
+        
+        // Wrap around screen for continuous flow
+        if (vehicle.speed > 0 && vehicle.x > this.cols) {
+            vehicle.x = -1;
+        } else if (vehicle.speed < 0 && vehicle.x < -1) {
+            vehicle.x = this.cols;
+        }
+    }
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Fair Collision Detection</h4>
+                    <code class="code-block">
+// Grid-based collision is precise and fair
+checkCollisions() {
+    for (let vehicle of this.vehicles) {
+        if (Math.floor(vehicle.x) === this.player.x && 
+            vehicle.y === this.player.y) {
+            this.loseLife();
+            return true; // Exact grid position collision
+        }
+    }
+    return false;
+}
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Road Hopper works because it respects the original Frogger formula – patience beats speed, timing beats reflexes, and observation beats luck. Every successful crossing feels earned."</em></p>
+                    
+                    <p><em>"When I see someone playing and they start bobbing back and forth at a lane edge, waiting for the perfect gap in traffic, I know they've found the Frogger rhythm. That's the dance between caution and courage."</em></p>
+                    
+                    <p><em>"The best arcade games teach you something about life. Frogger teaches you that sometimes the bravest thing to do is wait for the right moment."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Road Hopper Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"Every safe crossing is a victory over chaos and chance."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

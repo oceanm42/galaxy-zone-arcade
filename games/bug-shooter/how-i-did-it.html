@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Bug Shooter - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Bug Shooter</h1>
+            <p class="story-subtitle">Sal's Mission to Recreate Precision Shooting</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Centipede (1980)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Centipede was the sniper rifle of arcade games. You had one shot, one chance to break that serpentine chain before it reached you. Miss, and that centipede just kept coming, faster and more aggressive than before."</em></p>
+                    
+                    <p>Sal recalls Centipede as a masterclass in precision shooting. Players would hunker down with the trackball, making micro-adjustments to line up the perfect shot that would fragment the centipede at just the right spot.</p>
+                    
+                    <p><em>"The beauty of Centipede was in the strategy. Do you shoot the head to stop it in its tracks? Target the middle to create multiple enemies? Or clear the mushrooms to give yourself more room? Every shot was a tactical decision."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Centipede meant capturing its unique blend of precision shooting and strategic thinking:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Segmented Enemy</strong> - Destroy parts to create multiple threats</li>
+                        <li><strong>Mushroom Obstacles</strong> - Environmental barriers that affect movement</li>
+                        <li><strong>Precise Shooting</strong> - Accurate cursor-based targeting</li>
+                        <li><strong>Wave Progression</strong> - Increasingly complex centipede formations</li>
+                        <li><strong>Multiple Enemy Types</strong> - Spiders, scorpions, and fleas create chaos</li>
+                        <li><strong>Strategic Depth</strong> - Clear paths vs. fragment enemies</li>
+                    </ul>
+                    
+                    <p><em>"Centipede taught you that sometimes the best shot isn't the obvious shot. You had to think three segments ahead, like playing chess with a serpent."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Basic Shooter Syndrome</h2>
+                <div class="story-text">
+                    <p>The first version of Bug Shooter was just another generic space shooter with no understanding of what made Centipede special.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>What Was Missing:</h4>
+                        <ul>
+                            <li>No segmented enemies or fragmentation mechanics</li>
+                            <li>Generic straight-line enemy movement</li>
+                            <li>No environmental obstacles or mushrooms</li>
+                            <li>Imprecise shooting with no strategic depth</li>
+                            <li>Random enemies instead of the iconic centipede</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I looked at this thing and said, 'Where's the centipede?' This was just shooting random bugs in straight lines. Centipede was never about random – it was about that beautiful, terrifying snake coming right at you."</em></p>
+                    
+                    <p>Sal's feedback was specific: <strong>"Make it actually be Centipede. Segmented enemy that breaks apart when shot, mushroom obstacles, precise mouse aiming."</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: Authentic Centipede Mechanics</h2>
+                <div class="story-text">
+                    <p>The rebuild focused on recreating Centipede's core mechanics – the segmented enemy that becomes more dangerous when fragmented.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>The Centipede Formula:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Linked Segments</strong> - Chain of connected body parts</li>
+                            <li><strong>Fragmentation Logic</strong> - Breaking creates independent chains</li>
+                            <li><strong>Mushroom Collision</strong> - Obstacles redirect centipede movement</li>
+                            <li><strong>Cursor Shooting</strong> - Mouse-based precision targeting</li>
+                            <li><strong>Progressive Waves</strong> - Longer, faster centipedes each level</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"When I saw that first centipede wind its way down the screen, hit a mushroom, and change direction exactly like the original, I knew we had captured the magic. That's the Centipede DNA working perfectly."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Bug Shooter succeeds because it captures Centipede's tactical shooting experience:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Fragmentation Decision</h4>
+                        <p><em>"Every time you shoot a centipede segment, you're making a choice. Break it in the middle and suddenly you have two enemies to track. Hit the head and you stop the advance but the body becomes unpredictable."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Mushroom Strategy</h4>
+                        <p><em>"Those mushrooms aren't just obstacles – they're tactical elements. Clear a path and the centipede moves predictably. Leave them and create chaos. The best players learn to use mushrooms like chess pieces."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Precision Under Pressure</h4>
+                        <p><em>"When multiple centipede fragments are weaving toward you and you have to pick your shots carefully, that's when Centipede becomes poetry. Every click has to count."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Technical Breakthrough</h2>
+                <div class="story-text">
+                    <p>Here's how Bug Shooter creates authentic Centipede gameplay:</p>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Segmented Enemy Logic</h4>
+                    <code class="code-block">
+// Centipede as linked chain of segments
+class Centipede {
+    constructor() {
+        this.segments = [];
+        for (let i = 0; i < 10; i++) {
+            this.segments.push({ x: i * 20, y: 0 });
+        }
+    }
+    
+    // Break into multiple centipedes when shot
+    fragment(hitIndex) {
+        const head = this.segments.slice(0, hitIndex);
+        const tail = this.segments.slice(hitIndex + 1);
+        return [new Centipede(head), new Centipede(tail)];
+    }
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Mushroom Collision System</h4>
+                    <code class="code-block">
+// Centipede changes direction when hitting obstacles
+checkMushroomCollision(segment) {
+    for (let mushroom of this.mushrooms) {
+        if (this.collision(segment, mushroom)) {
+            this.direction *= -1; // Reverse horizontal direction
+            this.y += 20; // Drop down one row
+            return true;
+        }
+    }
+    return false;
+}
+                    </code>
+                </div>
+                
+                <div class="code-section">
+                    <h4>Precision Mouse Shooting</h4>
+                    <code class="code-block">
+// Mouse position controls crosshair and shooting
+canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    this.crosshair.x = e.clientX - rect.left;
+    this.crosshair.y = e.clientY - rect.top;
+});
+
+canvas.addEventListener('click', (e) => {
+    this.shoot(this.crosshair.x, this.crosshair.y);
+});
+                    </code>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Bug Shooter gets Centipede right because it understands that precision shooting isn't about speed – it's about making every shot count. Each bullet has consequences that ripple through the entire battlefield."</em></p>
+                    
+                    <p><em>"When I see someone playing and they hesitate for just a moment, carefully lining up a shot to fragment a centipede at exactly the right spot, I know they've found the Centipede mindset. That's tactical thinking in action."</em></p>
+                    
+                    <p><em>"The greatest arcade games teach you patience. Bug Shooter teaches you that the most powerful weapon isn't your gun – it's your ability to think three moves ahead."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Bug Shooter Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"In the garden of chaos, the patient marksman reigns supreme."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

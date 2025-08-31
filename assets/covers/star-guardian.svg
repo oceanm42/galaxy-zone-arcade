@@ -1,0 +1,168 @@
+<svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="200" fill="#0a0a0a"/>
+  
+  <!-- Starfield background -->
+  <circle cx="30" cy="20" r="1" fill="#FFFFFF"/>
+  <circle cx="70" cy="15" r="1" fill="#FFFFFF"/>
+  <circle cx="120" cy="25" r="1" fill="#FFFFFF"/>
+  <circle cx="180" cy="30" r="1" fill="#FFFFFF"/>
+  <circle cx="220" cy="15" r="1" fill="#FFFFFF"/>
+  <circle cx="40" cy="60" r="1" fill="#FFFFFF"/>
+  <circle cx="90" cy="55" r="1" fill="#FFFFFF"/>
+  <circle cx="160" cy="65" r="1" fill="#FFFFFF"/>
+  <circle cx="210" cy="70" r="1" fill="#FFFFFF"/>
+  <circle cx="25" cy="120" r="1" fill="#FFFFFF"/>
+  <circle cx="80" cy="130" r="1" fill="#FFFFFF"/>
+  <circle cx="140" cy="125" r="1" fill="#FFFFFF"/>
+  <circle cx="200" cy="140" r="1" fill="#FFFFFF"/>
+  <circle cx="35" cy="170" r="1" fill="#FFFFFF"/>
+  <circle cx="150" cy="180" r="1" fill="#FFFFFF"/>
+  <circle cx="230" cy="175" r="1" fill="#FFFFFF"/>
+  
+  <!-- Scrolling planet in background -->
+  <g transform="translate(200, 50)" opacity="0.6">
+    <circle cx="0" cy="0" r="25" fill="#4169E1" stroke="#4169E1" stroke-width="1"/>
+    <ellipse cx="-8" cy="-10" rx="8" ry="4" fill="#228B22"/>
+    <ellipse cx="5" cy="8" rx="12" ry="6" fill="#228B22"/>
+    <circle cx="-15" cy="5" r="4" fill="#228B22"/>
+    <animateTransform attributeName="transform" type="translate" values="200,50;150,50;100,50;50,50;0,50;-50,50" dur="8s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Guardian spaceship -->
+  <g transform="translate(60, 100)">
+    <!-- Main hull -->
+    <path d="M 0,-8 L -15,8 L -10,12 L -5,10 L 5,10 L 10,12 L 15,8 Z" fill="#00FFFF" stroke="#00FFFF" stroke-width="1"/>
+    <!-- Cockpit -->
+    <ellipse cx="0" cy="-2" rx="6" ry="4" fill="#FFFF00" stroke="#FFFF00" stroke-width="1"/>
+    <!-- Wings -->
+    <path d="M -15,0 L -25,-5 L -30,0 L -25,8 Z" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+    <path d="M 15,0 L 25,-5 L 30,0 L 25,8 Z" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+    <!-- Engine exhausts -->
+    <ellipse cx="-8" cy="12" rx="2" ry="4" fill="#FF00FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="8" cy="12" rx="2" ry="4" fill="#FF00FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Wing cannons -->
+    <rect x="-22" y="2" width="3" height="8" fill="#FF00FF"/>
+    <rect x="19" y="2" width="3" height="8" fill="#FF00FF"/>
+  </g>
+  
+  <!-- Enemy formations -->
+  <g transform="translate(180, 40)">
+    <!-- Lead enemy -->
+    <path d="M 0,-6 L -8,0 L -6,6 L 0,4 L 6,6 L 8,0 Z" fill="#FF00FF" stroke="#FF00FF" stroke-width="1"/>
+    <circle cx="-3" cy="0" r="1" fill="#FFFF00"/>
+    <circle cx="3" cy="0" r="1" fill="#FFFF00"/>
+    <animateTransform attributeName="transform" type="translate" values="180,40;160,45;140,40;120,45;100,40;80,45;60,40;40,45;20,40;0,45" dur="6s" repeatCount="indefinite"/>
+  </g>
+  
+  <g transform="translate(200, 60)">
+    <path d="M 0,-5 L -6,0 L -4,5 L 0,3 L 4,5 L 6,0 Z" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+    <circle cx="-2" cy="0" r="1" fill="#FF00FF"/>
+    <circle cx="2" cy="0" r="1" fill="#FF00FF"/>
+    <animateTransform attributeName="transform" type="translate" values="200,60;180,65;160,60;140,65;120,60;100,65;80,60;60,65;40,60;20,65" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+  </g>
+  
+  <g transform="translate(160, 20)">
+    <path d="M 0,-5 L -6,0 L -4,5 L 0,3 L 4,5 L 6,0 Z" fill="#FFFF00" stroke="#FFFF00" stroke-width="1"/>
+    <circle cx="-2" cy="0" r="1" fill="#00FFFF"/>
+    <circle cx="2" cy="0" r="1" fill="#00FFFF"/>
+    <animateTransform attributeName="transform" type="translate" values="160,20;140,25;120,20;100,25;80,20;60,25;40,20;20,25;0,20" dur="6s" begin="1s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Guardian laser shots -->
+  <rect x="38" y="110" width="2" height="12" fill="#00FFFF">
+    <animate attributeName="y" values="110;20" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="0.1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="82" y="105" width="2" height="12" fill="#00FFFF">
+    <animate attributeName="y" values="105;15" dur="0.8s" begin="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="0.1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Power beam -->
+  <rect x="57" y="88" width="6" height="30" fill="#FFFF00" opacity="0.8">
+    <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Enemy projectiles -->
+  <circle cx="170" cy="60" r="2" fill="#FF00FF">
+    <animate attributeName="cy" values="60;180" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="45" r="2" fill="#FF00FF">
+    <animate attributeName="cy" values="45;165" dur="1.8s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Shield bubble around guardian -->
+  <circle cx="60" cy="100" r="35" fill="none" stroke="#00FFFF" stroke-width="2" opacity="0.3">
+    <animate attributeName="opacity" values="0;0.3;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="35;40;35" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Explosion effects -->
+  <g transform="translate(140, 40)" opacity="0.8">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#FFFF00" stroke-width="2">
+      <animate attributeName="r" values="0;15;25" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.2;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="4" fill="#FFFF00" opacity="0.6">
+      <animate attributeName="r" values="4;10;18" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.1;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Power-up items -->
+  <g transform="translate(120, 80)">
+    <rect x="-3" y="-3" width="6" height="6" fill="#FFFF00" stroke="#FFFF00" stroke-width="1" rx="1">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="-2" y="1" font-family="monospace" font-size="4" fill="#0a0a0a">S</text>
+  </g>
+  
+  <!-- Asteroid field -->
+  <g transform="translate(220, 120)">
+    <path d="M 0,0 L -4,-6 L 2,-8 L 8,-4 L 6,4 L -2,6 Z" fill="none" stroke="#666666" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="220,120;200,125;180,120;160,125;140,120;120,125;100,120;80,125;60,120" dur="8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="4s" repeatCount="indefinite" additive="sum"/>
+    </path>
+  </g>
+  
+  <!-- Nebula effect -->
+  <ellipse cx="200" cy="150" rx="30" ry="15" fill="#4169E1" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-20,0;-40,0;-60,0" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- HUD elements -->
+  <rect x="10" y="10" width="80" height="20" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <rect x="12" y="12" width="60" height="4" fill="#00FF00"/>
+  <text x="15" y="24" font-family="monospace" font-size="8" fill="#00FFFF">SHIELD: 100%</text>
+  
+  <text x="150" y="20" font-family="monospace" font-size="10" fill="#FFFF00">WAVE: 4</text>
+  <text x="150" y="35" font-family="monospace" font-size="10" fill="#FF00FF">SCORE: 7850</text>
+  
+  <!-- Mini-map -->
+  <rect x="190" y="150" width="50" height="40" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <circle cx="200" cy="170" r="2" fill="#00FFFF"/>
+  <circle cx="215" cy="160" r="1" fill="#FF00FF"/>
+  <circle cx="225" cy="175" r="1" fill="#FF00FF"/>
+  <circle cx="210" cy="180" r="1" fill="#FFFF00"/>
+  
+  <!-- Warp jump effect -->
+  <g opacity="0.6">
+    <line x1="0" y1="100" x2="50" y2="100" stroke="#FFFFFF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.6;0" dur="0.1s" begin="5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="95" x2="45" y2="95" stroke="#FFFFFF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.6;0" dur="0.1s" begin="5.05s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="105" x2="48" y2="105" stroke="#FFFFFF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.6;0" dur="0.1s" begin="5.1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

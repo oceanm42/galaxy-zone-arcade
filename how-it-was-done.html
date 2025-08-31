@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How This Was Done - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="index.html" class="nav-back-button" id="backButton">← Back to Arcade</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How This Was Done</h1>
+            <p class="story-subtitle">The Tale of Sal "Pixel" Martinez and His AI Arcade Dream</p>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">Meet Sal "Pixel" Martinez</h2>
+                <div class="story-text">
+                    <p>Picture this: It's 1978, and Sal Martinez just opened "Galaxy Zone Arcade" in downtown Portland. With a pocketful of quarters and a head full of dreams, he rode the golden wave of arcade gaming through the 80s. Pac-Man, Space Invaders, Donkey Kong – Sal had them all, and the kids couldn't get enough.</p>
+
+                    <p>By 1995, home consoles had taken over, and Sal reluctantly closed his arcade. He kept one thing though – his original "Pixel" nickname from the regulars who watched him obsessively clean every screen until it gleamed.</p>
+
+                    <p>Fast forward to 2025. Sal, now 73 and supposedly "retired," stumbled across something called Claude Code. <em>"AI that can write games?"</em> he muttered, adjusting his reading glasses. <em>"Well, I'll be damned."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">From Quarters to Code</h2>
+                <div class="story-text">
+                    <p>Sal had a wild idea. What if he could rebuild Galaxy Zone online, but this time using AI to recreate all the classic games he'd loved? Not hiring some young hotshot developers who'd overcomplicate everything – just him, his memories, and an AI assistant.</p>
+
+                    <p><em>"I want to vibe code this thing,"</em> Sal declared to his confused cat, Joystick. <em>"Pure retro vibes, neon lights, and games that actually work."</em></p>
+
+                    <p>He fired up Claude Code with a simple but ambitious vision...</p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Spells (Key Prompts)</h2>
+                <div class="story-text">
+                    <p>Here are the actual prompts Sal used to bring his AI Arcade to life:</p>
+                </div>
+
+                <div class="prompt-box">
+                    <h3>The Genesis Prompt</h3>
+                    <code class="prompt-text">
+                        "Here is a list of 15 classic arcade games. Create each game into its own folder. Have the site landing link to each one. Name each game and provide cover art for each game. As we title the game, we can add 'Inspired by &lt;original game name (year)&gt;'. Recreate the classic arcade games using only HTML5, CSS, Canvas and JavaScript."
+                    </code>
+                </div>
+
+                <div class="prompt-box">
+                    <h3>The Crisis Management Prompt</h3>
+                    <code class="prompt-text">
+                        "pac chase does nothing. redo this game correctly. think"
+                    </code>
+                    <p class="prompt-note"><em>(This one came after hours of frustration with floating-point movement bugs!)</em></p>
+                </div>
+
+                <div class="prompt-box">
+                    <h3>The Navigation Salvation</h3>
+                    <code class="prompt-text">
+                        "add a way to get back from all the games to the main page"
+                    </code>
+                    <p class="prompt-note"><em>(Because nobody wants to be trapped in Neon Cycles forever...)</em></p>
+                </div>
+
+                <div class="prompt-box">
+                    <h3>The Perfectionist Prompt</h3>
+                    <code class="prompt-text">
+                        "redo cube hopper. It does nothing right now. Think hard and make it work"
+                    </code>
+                    <p class="prompt-note"><em>(Sal was not messing around with broken Q*bert clones!)</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">When the Pixels Hit the Fan</h2>
+                <div class="story-text">
+                    <p>Building an AI arcade wasn't all neon lights and victory fanfares. Sal faced some real challenges:</p>
+
+                    <div class="challenge-item">
+                        <h4>The Cube Hopper Catastrophe</h4>
+                        <p>The first version was just a square moving around with no actual Q*bert gameplay. Sal demanded a complete rewrite with proper isometric 3D cubes, diagonal hopping, and ghost AI. <em>"If it doesn't look like Q*bert, it ain't Q*bert!"</em></p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <h4>The Pac-Chase Precision Problem</h4>
+                        <p>Early Pac-Man had floating-point movement bugs that made it unplayable. The AI had to scrap the fancy system and go back to basics with a simple grid-based approach. Sometimes old-school is the only school.</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <h4>The Navigation Nightmare</h4>
+                        <p>Players were getting stuck in games with no way back to the main menu. Sal insisted on multiple escape routes: visual back buttons, ESC key shortcuts, and helpful hints. <em>"Nobody leaves Galaxy Zone unsatisfied!"</em></p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <h4>The SVG Animation Shenanigans</h4>
+                        <p>The Neon Cycles cover art had complex animations that broke browsers and caused XML parsing errors. The solution? Simpler, cleaner animations that still captured that Tron magic without melting computers.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Tech Behind the Magic</h2>
+                <div class="story-text">
+                    <p>Sal kept it simple but effective:</p>
+
+                    <ul class="tech-list">
+                        <li><strong>Pure HTML5, CSS3, JavaScript</strong> - No fancy frameworks, just solid web fundamentals</li>
+                        <li><strong>Canvas API for Games</strong> - Hardware-accelerated 2D graphics for smooth 60fps gameplay</li>
+                        <li><strong>CSS Variables for Neon Theme</strong> - <code>--neon-cyan: #00FFFF</code> and friends</li>
+                        <li><strong>Web Audio API</strong> - Authentic beeps, boops, and arcade sound effects</li>
+                        <li><strong>localStorage for High Scores</strong> - Because bragging rights are forever</li>
+                        <li><strong>Press Start 2P Font</strong> - For that authentic arcade typography</li>
+                        <li><strong>SVG Cover Art</strong> - Scalable vector graphics with retro animations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Final Score</h2>
+                <div class="story-text">
+                    <p>After countless prompts, debugging sessions, and "one more tweak" moments, Sal's AI Arcade came to life. <strong>15 fully playable games</strong>, each with authentic mechanics, retro styling, and that special arcade magic he remembered from the good old days.</p>
+
+                    <p>The best part? Every game was built through conversation – no traditional coding, just Sal describing what he wanted and the AI making it happen. Pure vibe coding at its finest.</p>
+
+                    <p><em>"Not bad for an old arcade rat and his AI buddy,"</em> Sal chuckled, watching the neon lights flicker across his screen. <em>"Galaxy Zone is back, baby!"</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Game Count: 15 Arcade Legends</h2>
+                <div class="game-list">
+                    <div class="game-grid-small">
+                        <a href="games/pac-chase/how-i-did-it.html" class="game-item">Pac-Chase (Pac-Man '80)</a>
+                        <a href="games/space-defenders/how-i-did-it.html" class="game-item">Space Defenders (Space Invaders '78)</a>
+                        <a href="games/asteroid-blaster/how-i-did-it.html" class="game-item">Asteroid Blaster (Asteroids '79)</a>
+                        <a href="games/barrel-jump/how-i-did-it.html" class="game-item">Barrel Jump (Donkey Kong '81)</a>
+                        <a href="games/road-hopper/how-i-did-it.html" class="game-item">Road Hopper (Frogger '81)</a>
+                        <a href="games/galaxy-raiders/how-i-did-it.html" class="game-item">Galaxy Raiders (Galaga '81)</a>
+                        <a href="games/brick-breaker/how-i-did-it.html" class="game-item">Brick Breaker (Breakout '76)</a>
+                        <a href="games/retro-tennis/how-i-did-it.html" class="game-item">Retro Tennis (Pong '72)</a>
+                        <a href="games/bug-shooter/how-i-did-it.html" class="game-item">Bug Shooter (Centipede '80)</a>
+                        <a href="games/city-defense/how-i-did-it.html" class="game-item">City Defense (Missile Command '80)</a>
+                        <a href="games/tunnel-hero/how-i-did-it.html" class="game-item">Tunnel Hero (Dig Dug '82)</a>
+                        <a href="games/cube-hopper/how-i-did-it.html" class="game-item">Cube Hopper (Q*bert '82)</a>
+                        <a href="games/knight-flyer/how-i-did-it.html" class="game-item">Knight Flyer (Joust '82)</a>
+                        <a href="games/star-guardian/how-i-did-it.html" class="game-item">Star Guardian (Defender '81)</a>
+                        <a href="games/neon-cycles/how-i-did-it.html" class="game-item">Neon Cycles (Tron '82)</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <pre class="sal-ascii">
+                      ,-.___,-.
+                     /  _   _  \
+                    |  (O)-(O)  |
+                    |     <     |
+                     \   ___   /
+                      '-._|_.-'
+                        |||||
+                    .==.|||||.==.
+                   /:::::::::::::\
+                  |::::::::::::::::|
+               ___|::::::::::::::::|___
+              /   |::::::::::::::::|   \
+             /    \:::::::::::::::/    \
+            |      '============='      |
+            |           |||||           |
+            |           |||||           |
+            |           |||||           |
+            |      .============.       |
+             \    /   ARCADE   \       /
+              \  |    OWNER     |     /
+               \ |    SINCE     |    /
+                \|    '1982'    |   /
+                 |              |  /
+                 |              | /
+                 |              |/
+                 |              |
+                 |    ______    |
+                /    /      \    \
+               /    /        \    \
+              |    |          |    |
+              |    |          |    |
+              |    |          |    |
+               \    \        /    /
+                \____\______/____/
+
+              Sal "Pixel" Martinez
+            </pre>
+            <p><em>"The arcade never really died – it just learned to code."</em> - Sal "Pixel" Martinez</p>
+            <div class="back-to-arcade">
+                <a href="index.html" class="back-button">Back to the Arcade</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                window.location.href = 'index.html';
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = 'index.html';
+            });
+        }
+    </script>
+</body>
+</html>

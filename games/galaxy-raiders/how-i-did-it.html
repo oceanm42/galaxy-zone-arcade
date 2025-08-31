@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built Galaxy Raiders - AI Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#" class="nav-back-button" id="backButton">← Back</a>
+        <span class="nav-shortcut-hint">ESC</span>
+    </div>
+
+    <div class="story-container">
+        <header class="story-header">
+            <h1 class="story-title">How I Built Galaxy Raiders</h1>
+            <p class="story-subtitle">Sal's Quest for Formation Flying Perfection</p>
+            <div class="game-info-header">
+                <span class="inspired-by">Inspired by Galaga (1981)</span>
+            </div>
+        </header>
+
+        <main class="story-content">
+            <section class="story-section">
+                <h2 class="section-title">The Original Memory</h2>
+                <div class="story-text">
+                    <p><em>"Galaga was Space Invaders' smarter, more dangerous cousin. Those aliens didn't just march in formation – they danced. They swooped and dove in beautiful arcs, turning space combat into aerial ballet."</em></p>
+                    
+                    <p>Sal remembers Galaga as the evolution of space shooters. While other games had enemies moving in predictable patterns, Galaga's aliens would break formation and dive at players in graceful, challenging arcs.</p>
+                    
+                    <p><em>"Kids would memorize those dive patterns like sheet music. The yellow commander, the swooping escorts, the tractor beam capture – every element had its own rhythm and strategy."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Vision</h2>
+                <div class="story-text">
+                    <p>Recreating Galaga meant capturing its sophisticated enemy AI and formation flying mechanics:</p>
+                    
+                    <ul class="vision-list">
+                        <li><strong>Formation Patterns</strong> - Enemies arrange in complex geometric formations</li>
+                        <li><strong>Dive Attacks</strong> - Individual aliens break from formation to attack</li>
+                        <li><strong>Smooth Arcs</strong> - Enemies follow curved flight paths, not straight lines</li>
+                        <li><strong>Enemy Hierarchy</strong> - Different alien types with unique behaviors</li>
+                        <li><strong>Capture Mechanics</strong> - Tractor beam kidnapping and rescue missions</li>
+                        <li><strong>Challenging Bonus</strong> - Extra points for perfect formation shooting</li>
+                    </ul>
+                    
+                    <p><em>"Galaga proved that enemy AI could be beautiful. Those diving patterns weren't just challenging – they were mesmerizing. Players would get hypnotized watching the formations dance."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Challenge: Static Formation Syndrome</h2>
+                <div class="story-text">
+                    <p>The first version of Galaxy Raiders had boring, predictable enemies that moved in straight lines without any of Galaga's dynamic formations.</p>
+                    
+                    <div class="challenge-item">
+                        <h4>The Formation Failures:</h4>
+                        <ul>
+                            <li>Enemies moved in straight lines like Space Invaders</li>
+                            <li>No formation flying or coordinated group behavior</li>
+                            <li>Linear attack patterns with no curved flight paths</li>
+                            <li>All enemies behaved identically regardless of type</li>
+                            <li>No tractor beam or capture mechanics</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"I watched this thing and said, 'These aren't Galaga aliens – these are Space Invaders in disguise.' Where were the beautiful dive patterns? The formation dancing? The personality?"</em></p>
+                    
+                    <p>Sal's feedback was specific: <strong>"Make the aliens move like Galaga – formation flying, curved dive attacks, and those smooth arcing patterns that made the original hypnotic."</strong></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Solution: Dynamic Formation AI</h2>
+                <div class="story-text">
+                    <p>The breakthrough came when the AI implemented true Galaga-style movement – enemies that could fly in formation, then break away for individual attacks.</p>
+                    
+                    <div class="tech-highlight">
+                        <h4>The Formation System:</h4>
+                        <ul class="tech-list">
+                            <li><strong>Bezier Curve Movement</strong> - Smooth arcing flight paths</li>
+                            <li><strong>State-Based AI</strong> - Formation, diving, and attacking modes</li>
+                            <li><strong>Group Coordination</strong> - Enemies maintain formation spacing</li>
+                            <li><strong>Dive Pattern Library</strong> - Multiple attack trajectories</li>
+                            <li><strong>Formation Reformation</strong> - Return to formation after attacks</li>
+                        </ul>
+                    </div>
+                    
+                    <p><em>"When I saw those first aliens arrange themselves in a perfect V-formation, then watched one break away and dive in a beautiful arc, I knew we had captured the Galaga magic. That's formation flying poetry."</em></p>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">The Magic Details</h2>
+                <div class="story-text">
+                    <p>Galaxy Raiders succeeds because it captures Galaga's hypnotic enemy choreography:</p>
+                    
+                    <div class="detail-item">
+                        <h4>The Formation Dance</h4>
+                        <p><em>"Watching enemies fly in perfect formation, maintaining their spacing and synchronization, creates this mesmerizing rhythm. You almost don't want to shoot them because the patterns are so beautiful."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>Predictable Chaos</h4>
+                        <p><em>"The dive patterns look random but they follow precise mathematical curves. Good players learn to read the arcs and position themselves for the perfect shot. It's pattern recognition at its finest."</em></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>The Escort Challenge</h4>
+                        <p><em>"Those yellow commanders with their escort formations create mini-puzzles. Do you take out the escorts first for easy points, or go for the risky commander shot for the bonus? Every formation presents a strategic choice."</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story-section">
+                <h2 class="section-title">Sal's Final Thoughts</h2>
+                <div class="story-text">
+                    <p><em>"Galaxy Raiders gets Galaga right because it understands that enemy AI can be art. When those formations execute their perfect choreography, you're not just playing a game – you're watching a performance."</em></p>
+                    
+                    <p><em>"When I see someone playing and they pause to watch a particularly elegant dive pattern before taking their shot, I know they've found the Galaga appreciation. That's the beauty of mathematical precision in motion."</em></p>
+                    
+                    <p><em>"The best space shooters teach you patience – not every shot needs to be instant. Sometimes the most satisfying victories come from waiting for the perfect moment when formation and opportunity align."</em></p>
+                </div>
+                
+                <div class="play-link">
+                    <a href="index.html" class="play-button">Play Galaxy Raiders Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="story-footer">
+            <p><em>"In the dance between formation and chaos, timing is everything."</em> - Sal</p>
+            <div class="navigation-options">
+                <a href="../../how-it-was-done.html" class="nav-link">← Back to Full Story</a>
+                <a href="index.html" class="nav-link">Play This Game →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smart back navigation
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../../index.html';
+            }
+        }
+
+        // ESC key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Back button click handler
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                goBack();
+            });
+        }
+    </script>
+</body>
+</html>

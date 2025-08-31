@@ -1,0 +1,141 @@
+<svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="200" fill="#0a0a0a"/>
+  
+  <!-- Mushroom field -->
+  <g>
+    <g transform="translate(40, 180)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-3" rx="6" ry="3" fill="#FF00FF"/>
+      <circle cx="-3" cy="-3" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-3" r="1" fill="#FFFF00"/>
+    </g>
+    
+    <g transform="translate(80, 160)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-3" rx="6" ry="3" fill="#00FFFF"/>
+      <circle cx="-3" cy="-3" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-3" r="1" fill="#FFFF00"/>
+    </g>
+    
+    <g transform="translate(120, 170)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-3" rx="6" ry="3" fill="#00FF00"/>
+      <circle cx="-3" cy="-3" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-3" r="1" fill="#FFFF00"/>
+    </g>
+    
+    <g transform="translate(160, 180)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-3" rx="6" ry="3" fill="#FF00FF"/>
+      <circle cx="-3" cy="-3" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-3" r="1" fill="#FFFF00"/>
+    </g>
+    
+    <g transform="translate(200, 160)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-3" rx="6" ry="3" fill="#00FFFF"/>
+      <circle cx="-3" cy="-3" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-3" r="1" fill="#FFFF00"/>
+    </g>
+    
+    <g transform="translate(60, 140)">
+      <ellipse cx="0" cy="0" rx="6" ry="3" fill="#FFFF00"/>
+      <ellipse cx="0" cy="-2" rx="4" ry="2" fill="#00FF00"/>
+      <circle cx="-2" cy="-2" r="1" fill="#FFFF00"/>
+      <circle cx="2" cy="-2" r="1" fill="#FFFF00"/>
+    </g>
+  </g>
+  
+  <!-- Centipede segments -->
+  <g>
+    <!-- Head -->
+    <g transform="translate(50, 80)">
+      <ellipse cx="0" cy="0" rx="8" ry="6" fill="#00FF00" stroke="#00FF00" stroke-width="1"/>
+      <circle cx="-3" cy="-2" r="1" fill="#FFFF00"/>
+      <circle cx="3" cy="-2" r="1" fill="#FFFF00"/>
+      <circle cx="-3" cy="-2" r="0.5" fill="#0a0a0a"/>
+      <circle cx="3" cy="-2" r="0.5" fill="#0a0a0a"/>
+      <!-- Antennae -->
+      <line x1="-5" y1="-4" x2="-8" y2="-8" stroke="#00FF00" stroke-width="1"/>
+      <line x1="5" y1="-4" x2="8" y2="-8" stroke="#00FF00" stroke-width="1"/>
+      <animateTransform attributeName="transform" type="translate" values="50,80;70,80;90,80;110,80;130,80;150,80;170,80;170,100;150,100;130,100;110,100;90,100;70,100;50,100;50,80" dur="8s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Body segments -->
+    <g transform="translate(40, 85)">
+      <ellipse cx="0" cy="0" rx="6" ry="5" fill="#FF00FF" stroke="#FF00FF" stroke-width="1"/>
+      <animateTransform attributeName="transform" type="translate" values="40,85;60,85;80,85;100,85;120,85;140,85;160,85;160,105;140,105;120,105;100,105;80,105;60,105;40,105;40,85" dur="8s" begin="0.3s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(30, 90)">
+      <ellipse cx="0" cy="0" rx="6" ry="5" fill="#00FFFF" stroke="#00FFFF" stroke-width="1"/>
+      <animateTransform attributeName="transform" type="translate" values="30,90;50,90;70,90;90,90;110,90;130,90;150,90;150,110;130,110;110,110;90,110;70,110;50,110;30,110;30,90" dur="8s" begin="0.6s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(20, 95)">
+      <ellipse cx="0" cy="0" rx="6" ry="5" fill="#FFFF00" stroke="#FFFF00" stroke-width="1"/>
+      <animateTransform attributeName="transform" type="translate" values="20,95;40,95;60,95;80,95;100,95;120,95;140,95;140,115;120,115;100,115;80,115;60,115;40,115;20,115;20,95" dur="8s" begin="0.9s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(10, 100)">
+      <ellipse cx="0" cy="0" rx="5" ry="4" fill="#FF00FF" stroke="#FF00FF" stroke-width="1"/>
+      <animateTransform attributeName="transform" type="translate" values="10,100;30,100;50,100;70,100;90,100;110,100;130,100;130,120;110,120;90,120;70,120;50,120;30,120;10,120;10,100" dur="8s" begin="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Player shooter at bottom -->
+  <g transform="translate(125, 190)">
+    <rect x="-8" y="-4" width="16" height="8" fill="#00FFFF" rx="2"/>
+    <rect x="-2" y="-8" width="4" height="8" fill="#00FFFF"/>
+    <animateTransform attributeName="transform" type="translate" values="125,190;145,190;105,190;125,190" dur="2s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Laser shots -->
+  <rect x="124" y="170" width="2" height="8" fill="#FFFF00">
+    <animate attributeName="y" values="170;40" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="144" y="160" width="2" height="8" fill="#FFFF00">
+    <animate attributeName="y" values="160;30" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Spider descending -->
+  <g transform="translate(200, 40)">
+    <ellipse cx="0" cy="0" rx="8" ry="6" fill="#FF00FF" stroke="#FF00FF" stroke-width="1"/>
+    <!-- Spider legs -->
+    <line x1="-6" y1="-2" x2="-12" y2="-6" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="6" y1="-2" x2="12" y2="-6" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="-6" y1="2" x2="-12" y2="6" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="6" y1="2" x2="12" y2="6" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="-8" y1="0" x2="-14" y2="0" stroke="#FF00FF" stroke-width="1"/>
+    <line x1="8" y1="0" x2="14" y2="0" stroke="#FF00FF" stroke-width="1"/>
+    <!-- Eyes -->
+    <circle cx="-3" cy="-2" r="1" fill="#FFFF00"/>
+    <circle cx="3" cy="-2" r="1" fill="#FFFF00"/>
+    <!-- Web line -->
+    <line x1="0" y1="-6" x2="0" y2="-30" stroke="#FFFFFF" stroke-width="1"/>
+    <animate attributeName="transform" values="translate(200,40);translate(200,120);translate(200,40)" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Flea -->
+  <g transform="translate(30, 50)">
+    <ellipse cx="0" cy="0" rx="4" ry="6" fill="#00FFFF" stroke="#00FFFF" stroke-width="1"/>
+    <line x1="-3" y1="0" x2="-6" y2="-3" stroke="#00FFFF" stroke-width="1"/>
+    <line x1="3" y1="0" x2="6" y2="-3" stroke="#00FFFF" stroke-width="1"/>
+    <animate attributeName="transform" values="translate(30,50);translate(30,130);translate(30,50)" dur="3s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Explosion effect on centipede -->
+  <g transform="translate(90, 80)" opacity="0.7">
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#FFFF00" stroke-width="2">
+      <animate attributeName="r" values="0;12;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#FFFF00" opacity="0.8">
+      <animate attributeName="r" values="3;8;3" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Score display -->
+  <text x="20" y="20" font-family="monospace" font-size="10" fill="#00FFFF">SCORE: 1250</text>
+  <text x="20" y="35" font-family="monospace" font-size="8" fill="#FF00FF">LIVES: 3</text>
+</svg>
