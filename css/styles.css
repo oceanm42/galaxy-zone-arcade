@@ -399,11 +399,37 @@ body::before {
 }
 
 .story-button:hover {
-    background: var(--neon-magenta);
-    color: var(--dark-bg);
-    box-shadow: 0 0 25px var(--neon-magenta);
-    transform: scale(1.05);
-    text-shadow: none;
+  background: var(--neon-magenta);
+  color: var(--dark-bg);
+  box-shadow: 0 0 25px var(--neon-magenta);
+  transform: scale(1.05);
+  text-shadow: none;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--dark-card);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.github-button:hover {
+  background: #ffffff;
+  color: var(--dark-bg);
+  box-shadow: 0 0 25px #ffffff;
+  transform: scale(1.05);
+  text-shadow: none;
 }
 
 /* Story Page Styles */
